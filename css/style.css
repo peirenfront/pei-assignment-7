@@ -1,0 +1,399 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+  margin:0;
+  padding:0;
+}
+body{width:100%;
+margin-right:-90px;
+}
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position:relative;
+}
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+header {
+  background: #033048;
+  padding: 25px 0;
+  overflow: hidden;
+}
+header .logo {
+  color: #fff;
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 15px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+}
+header nav ul li a {
+  color: #f9e42e;
+}
+
+#hero {
+  height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  padding-top: 32px;
+}
+
+#hero .logo {
+  color: #fff;
+}
+#hero h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 90px;
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}
+#benefits {
+  padding: 100px 0 80px;
+}
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#benefits p, #benefits ul {
+  width: 100%;
+}
+#benefits ul {
+  list-style: disc;
+  margin: 30px 0 0 80px;
+}
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 70px 0 70px;
+  color: #fff;
+}
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  width: 100%;
+}
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+#main {
+  margin-top: 80px;
+}
+#posts {
+  /*width: 700px;*/
+  width: 64%;
+  display: inline-block;
+  margin-right: 4%;
+  vertical-align: top;
+}
+#sidebar {
+  /*width: 240px;*/
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+}
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post img {
+  margin-bottom: 30px;
+}
+.post p {
+  font-size: 24px;
+  line-height: 1.333;
+  color: #606161;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 30px;
+}
+.readmore a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#sidebar h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #043049;
+}
+#sidebar ul {
+  margin-bottom: 40px;
+}
+#sidebar ul li a {
+  color: #043049;
+  font-size: 24px;
+}
+#sidebar p {
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+#sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+blockquote {
+  text-align: center;
+  margin: 0 auto;
+}
+footer {
+  background: #121212;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 68px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px;
+}
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+@media screen and (max-width:1228px){
+header .logo {   
+  margin-left:5.6%;
+  margin-top:-1.6%;
+}
+header nav {
+  float:none;
+  margin-left: 50%;
+}
+blockquote {padding:0 15%;}
+h3, .post{margin-left: 6%;}
+#benefits p{padding-left:6%; padding-right:8%;}
+#benefits ul {margin-left:9.2%;}
+#sidebar h3, #sidebar p{margin-left:-1%;}
+.post img{width:96%;}
+}
+
+
+@media screen and (max-width:1000px){
+header .logo {margin-left:4.6%;}
+header nav {margin-left: 48%;}
+.container {width: 100%;}
+#benefits p{padding-left:6%; padding-right:6%;}
+.post h2{font-size:1.16em;}
+.post p{padding-right:1em;}
+/*.post img{width:90%;}*/
+blockquote {
+  text-align: center;
+  margin: 0 auto;
+}
+}
+
+@media screen and (max-width:981px){
+.post img{width:94%;}
+.post h2,.post p{padding-right:7%;}
+.post h2{font-size: 1.35em;}
+}
+
+
+@media screen and (max-width:950px){
+header nav {margin-left: 47%;}
+}
+
+
+@media screen and (max-width:895px){
+header nav {margin-left: 43%;}
+}
+
+@media screen and (max-width:890px){
+#hero h2 {font-size: 1.76em;}
+}
+
+@media screen and (max-width:855px){
+header nav {margin-left: 42%;}
+}
+
+
+@media screen and (max-width:826px){
+header nav {margin-left: 40%;}
+#benefits ul li {padding-right: 27.6%;}
+#hero h2 {font-size: 1.56em;}
+}
+
+@media screen and (max-width:805px){
+header nav {margin-left: 38%;}
+}
+
+@media screen and (max-width:768px){
+header nav {margin-left: 36%;}
+#hero h2 {font-size: 1.4em;}
+.container {width: 100%;}
+p{letter-spacing: -1px;}
+#benefits ul li {padding-right: 23.6%;}
+#testimonial{padding-right: 2%;}
+blockquote{font-size:1.1em;}
+footer{padding-right:6.6%;}
+}
+
+@media screen and (max-width:750px){
+header nav {margin-left: 32%;}
+header nav ul{padding-top:10%;}
+header nav ul li{
+  display: block;
+  float: none;
+  padding-top:5%;
+/*  margin-left:-99%; */
+}
+}
+
+@media screen and (max-width:746px){
+#sidebar{display:block;padding:0 6%;width:100%;}
+#posts,.container{width:100%;margin:0;}
+header nav ul{
+  display: block;
+  float: none;
+}
+}
+
+@media screen and (max-width:605px){
+#hero h2{font-size: 1.6em;}
+}
+
+@media screen and (max-width:500px){
+#hero h2, .post h2{font-size: 1.2em;}
+#hero h2{padding: 0 10%}
+#benefits ul{padding-left:2%;}
+header nav ul{padding-top:25%;}
+}
+
+@media screen and (max-width:400px){
+.post{margin-left:11%;}
+
+
+}
+
+
+
